@@ -1,9 +1,9 @@
 import { Routes, Route, Navigate, NavLink } from 'react-router-dom';
 
 import './App.scss';
-import { PeoplePage } from './components/PeoplePage/PeoplePage';
-import { HomePaige } from './components/HomePaige/HomePage';
-import { PageNotFound } from './components/PageNotFound/PageNotFound';
+import { PeoplePage } from './pages/PeoplePage/PeoplePage';
+import { HomePaige } from './pages/HomePaige/HomePage';
+import { PageNotFound } from './pages/PageNotFound/PageNotFound';
 
 export const App = () => (
   <div data-cy="app">
@@ -44,7 +44,7 @@ export const App = () => (
             <Route path=":personSlug" element={<PeoplePage />} />
           </Route>
 
-          <Route path="/Home" element={<Navigate to="/" replace />} />
+          <Route path="/home" element={<Navigate to="/" replace />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
