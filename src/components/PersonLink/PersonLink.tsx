@@ -5,7 +5,7 @@ type Props = {
   person: Person;
 };
 
-export const PersonalLink: React.FC<Props> = ({ person }) => {
+export const PersonLink: React.FC<Props> = ({ person }) => {
   return (
     <Link
       className={person.sex === 'f' ? 'has-text-danger' : ''}

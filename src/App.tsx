@@ -2,7 +2,7 @@ import { Routes, Route, Navigate, NavLink } from 'react-router-dom';
 
 import './App.scss';
 import { PeoplePage } from './pages/PeoplePage/PeoplePage';
-import { HomePaige } from './pages/HomePaige/HomePage';
+import { HomePaige } from './pages/HomePage/HomePage';
 import { PageNotFound } from './pages/PageNotFound/PageNotFound';
 
 export const App = () => (
